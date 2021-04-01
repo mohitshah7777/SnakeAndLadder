@@ -93,6 +93,24 @@ public class SnakesAndLadder {
 			              default:
 			                   newPositionPlayer1 = Player1_Position;
 			           }
+							if (Player1_Position<newPositionPlayer1)
+		      {
+		    	  System.out.println("\nWow!, you have landed on a ladder. Player postion = " +newPositionPlayer1);
+		      }
+
+		      if (Player1_Position>newPositionPlayer1)
+		      {
+		    	  System.out.println("\nUnlucky, you have landed on a snake. Player position = " +newPositionPlayer1);
+		      }
+
+		      Player1_Position = newPositionPlayer1;
+		      if(Player1_Position==100)
+			     {
+		    	  	 System.out.println("--------------------------------------");
+			    	 System.out.println("Congratulations,Player 1 won!");
+			    	 System.out.println("--------------------------------------");
+			    	 break;
+			     }
 		} while(Player1_Position<100);
 	}
 }
