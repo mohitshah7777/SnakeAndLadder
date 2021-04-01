@@ -17,7 +17,7 @@ public class SnakesAndLadder {
 			  diceroll1=(random.nextInt(6)+1);
 		     System.out.println("Player rolled diceroll and got = " +diceroll1 );
 		     Player1_Position+=diceroll1;
-
+			  dicerollcounter1++;
 				//UC5 functionality
 		      if(Player1_Position >100)
 		      {
@@ -109,7 +109,8 @@ public class SnakesAndLadder {
 			     {
 		    	  	 System.out.println("--------------------------------------");
 			    	 System.out.println("Congratulations,Player 1 won!");
-			    	 System.out.println("--------------------------------------");
+					 System.out.println("Player 1 rolled the dice = " +dicerollcounter1+ " times");
+				  	 System.out.println("--------------------------------------");
 			    	 break;
 			     }
 		} while(Player1_Position<100);
